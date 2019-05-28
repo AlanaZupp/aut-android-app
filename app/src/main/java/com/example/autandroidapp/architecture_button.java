@@ -18,18 +18,14 @@ public class architecture_button extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
-   /* public void homeActivity(View view)
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }*/
-
+    //create the menu area for the home button to go
     public boolean onCreateOptionsMenu(Menu menu)
     {
         getMenuInflater().inflate(R.menu.main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
+    //when home button (action_home) is pressed, the page is redirected to the homepage (MainActivity)
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch (item.getItemId())

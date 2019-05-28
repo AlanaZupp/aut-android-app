@@ -19,14 +19,14 @@ public class coursesActivityTest {
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
     private MainActivity mainActivity = null;
 
-    // A method to get a map activity for testing
-    @Before
+    // before method gets the courses activity to start testing
     public void setUp() throws Exception {
         mainActivity = mainActivityActivityTestRule.getActivity();
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+
+    //test method launches the courses activity where the categories of all the courses are shown as buttons
     public void coursesActivity() {
 
         View view = mainActivity.findViewById(R.id.courses);

@@ -19,14 +19,15 @@ public class servicesActivityTest {
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
     private MainActivity mainActivity = null;
 
-    // A method to get a map activity for testing
+    // before method gets the services activity to start testing
     @Before
     public void setUp() throws Exception {
         mainActivity = mainActivityActivityTestRule.getActivity();
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+
+    //test method launches the services activity which has buttons for the different services available
     public void servicesActivity() {
 
         View view = mainActivity.findViewById(R.id.services);

@@ -22,6 +22,7 @@ public class international_button extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    //when home button (action_home) is pressed, the page is redirected to the homepage (MainActivity)
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch (item.getItemId())

@@ -26,7 +26,8 @@ public class MapActivityTest {
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+
+    //test method launches the map activity which has map image of city campus and other campus options
     public void mapActivity() {
 
         View view = mainActivity.findViewById(R.id.map);

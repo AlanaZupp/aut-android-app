@@ -12,6 +12,7 @@ import static org.junit.Assert.assertNotNull;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
+
 @RunWith(AndroidJUnit4.class)
 public class CalendarActivityTest {
 
@@ -19,14 +20,14 @@ public class CalendarActivityTest {
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
     private MainActivity mainActivity = null;
 
-    // A method to get a map activity for testing
+    // before method gets the calendar activity to start testing
     @Before
     public void setUp() throws Exception {
         mainActivity = mainActivityActivityTestRule.getActivity();
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+    //test method launches the calendar activity which has tabbed options
     public void CalendarActivity() {
 
         View view = mainActivity.findViewById(R.id.calendar);

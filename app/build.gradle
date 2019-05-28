@@ -33,6 +33,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha04'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
     annotationProcessor 'org.apache.logging.log4j:log4j-core:2.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
     implementation 'ai.api:sdk:2.0.7@aar'
     implementation 'ai.api:libai:1.4.8'
     implementation 'com.google.code.gson:gson:2.8.2'

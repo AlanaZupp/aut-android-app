@@ -19,14 +19,15 @@ public class helpActivityTest {
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
     private MainActivity mainActivity = null;
 
-    // A method to get a map activity for testing
+    // before method gets the help activity to start testing
     @Before
     public void setUp() throws Exception {
         mainActivity = mainActivityActivityTestRule.getActivity();
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+
+//test method launches the help activity which has 3 buttons for help
     public void helpActivity() {
 
         View view = mainActivity.findViewById(R.id.help);

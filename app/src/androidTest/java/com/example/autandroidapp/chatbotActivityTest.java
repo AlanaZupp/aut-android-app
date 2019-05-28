@@ -19,14 +19,15 @@ public class chatbotActivityTest {
     public ActivityTestRule<MainActivity> mainActivityActivityTestRule = new ActivityTestRule<MainActivity>(MainActivity.class);
     private MainActivity mainActivity = null;
 
-    // A method to get a map activity for testing
+    // before method gets the chatbot activity to start testing
     @Before
     public void setUp() throws Exception {
         mainActivity = mainActivityActivityTestRule.getActivity();
     }
 
     @Test
-    // A method to test launching a mapActivity, with map images of city campus
+
+    //test method launches the chatbot activity which has the message bar and echos the message
     public void chatbotActivity() {
 
         View view = mainActivity.findViewById(R.id.chatbot);

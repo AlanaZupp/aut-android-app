@@ -18,12 +18,7 @@ public class art_button extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
-   /* public void homeActivity(View view)
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }*/
-
+    //when home button (action_home) is pressed, the page is redirected to the homepage (MainActivity)
     public boolean onCreateOptionsMenu(Menu menu)
     {
         getMenuInflater().inflate(R.menu.main, menu);
